@@ -22,6 +22,7 @@ static const uint16_t kVID = 0x1209;
 static const uint16_t kPID = 0x2A42;
 
 void setup() {
+  // NOTE : these must be called before USB enumeration
   // set VID, PID
   TinyUSBDevice.setID(kVID, kPID);
 
